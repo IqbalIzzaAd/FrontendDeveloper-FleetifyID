@@ -1,0 +1,139 @@
+/* 🌞 Mode Default (Light Mode) */
+body {
+    font-family: Arial, sans-serif;
+    background: url("img/bgMeta-logo.gif") no-repeat;
+    background-size: cover;
+    color: #D98324;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Container utama */
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Tombol Dark Mode */
+#toggle-dark-mode {
+    padding: 8px 12px;
+    font-size: 14px;
+    background: #D98324;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-dark-mode:hover {
+    background: #b36e1d;
+}
+
+/* Form Input */
+.input-container {
+    margin-bottom: 10px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #D98324;
+    border-radius: 5px;
+    background: white;
+    color: #443627;
+}
+
+/* Filter */
+.filter-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #D98324;
+    text-align: center;
+}
+
+th {
+    background: #D98324;
+    color: white;
+}
+
+td {
+    background: white;
+    color: #443627;
+}
+
+/* Tombol */
+button {
+    cursor: pointer;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #D98324;
+    color: white;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #b36e1d;
+}
+
+/* 🌙 Mode Gelap (Dark Mode) */
+.dark-mode {
+    background: #443627;
+}
+
+.dark-mode .container {
+    background: #F2F6D0;
+    color: #443627;
+}
+
+.dark-mode table,
+.dark-mode th,
+.dark-mode td {
+    background: #F2F6D0;
+    color: #443627;
+    border-color: #443627;
+}
+
+/* Input dan Select di Dark Mode */
+.dark-mode input, 
+.dark-mode select {
+    background: #EFDCAB;
+    color: #443627;
+    border: 1px solid #443627;
+}
+
+/* Tombol di Dark Mode */
+.dark-mode button {
+    background: #443627;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background: #2d241a;
+}
